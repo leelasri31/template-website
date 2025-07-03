@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Template Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Template Modification Website</h1>
+  </header>
+
+  <main>
+    <section class="editor">
+      <h2>Edit Template</h2>
+      <label>Page Title:
+        <input type="text" id="titleInput" placeholder="Enter title">
+      </label>
+
+      <label>Header Text:
+        <input type="text" id="headerInput" placeholder="Enter header">
+      </label>
+
+      <label>Background Color:
+        <input type="color" id="bgColorInput" value="#ffffff">
+      </label>
+
+      <button onclick="applyChanges()">Apply Changes</button>
+    </section>
+
+    <section class="preview">
+      <h2>Live Preview</h2>
+      <iframe id="previewFrame"></iframe>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
